@@ -1,3 +1,9 @@
+p {
+  color: #282c34;
+  font-size: medium;
+  text-align: center;
+  margin-top: 20px ;
+}
 .App {
   text-align: center;
 }

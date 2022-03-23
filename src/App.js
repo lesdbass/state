@@ -1,25 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Profil from './Component/Profil';
+class App extends React.Component {
+  
+  render()
+  {
+  const Person = { id: 1,
+                   fullName : "Bassem Lessoued" ,
+                   bio : "Le développement web frontal correspond aux productions HTML, CSS et JavaScript d’une page internet ou d’une application qu’un utilisateur peut voir et avec lesquelles il peut interagir directement.", 
+                   imgSrc : "./profil.png", 
+                   profession: "Back End" , 
+                   show : 'True'
+                  }
+  {
+      return (
+        <div className="App">
+          <header className="App-header">
+            <h1>Welcome to checkpoint "State"</h1>
+            <Profil person={Person} />
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+          </header> 
+        </div>
+      );
+}
+
+}
 }
 
 export default App;
